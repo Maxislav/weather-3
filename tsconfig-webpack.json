@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "types": [
+      "node"
+    ]
+
+  },
+  "files": ["webpack.config.ts"],
+  "filesGlob": [
+    "./src/types.d.ts",
+    "!./node_modules/**/*.ts"
+  ],
+
+  "exclude": [
+    "webpack.config.ts",
+    "src",
+    "dist",
+    "lib",
+    "@angular",
+    "**/node_modules/*",
+    "./node_modules/*",
+    "node_modules"
+  ]
+}

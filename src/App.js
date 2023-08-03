@@ -1,9 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import {useState} from "react";
+import {Testtsx} from "./test.tsx";
 
-function App() {
+export const App = () => {
+  const [count, setCount] = useState(10);
+  const update = () => {
+    setCount(count+1)
+  }
+
   return (
+
     <div className="App">
+      <h1>{count}</h1>
+        <Testtsx/>
+      <button onClick={update}>
+        update
+      </button>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,5 +34,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+//export default App;
