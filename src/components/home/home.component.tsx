@@ -1,0 +1,1 @@
+import { useLoaderData } from "react-router-dom";interface HomeLoaderData {    date: string;}export function Home() {    let data = useLoaderData() as HomeLoaderData;    return (        <>            <h2>Home</h2>            <p>Date from loader: {data.date}</p>        </>    );}
