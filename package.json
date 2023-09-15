@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npx webpack serve --open",
+    "dev": "npx webpack serve",
     "build": "webpack",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
