@@ -1,0 +1,8 @@
+{
+  "name": "tinyscrollbar",
+  "version": "1.0.0",
+  "main": "tinyscrollbar.js",
+  "type": "commonjs",
+  "typings": "tinyscrollbar.d.ts",
+  "module": "tinyscrollbar.js"
+}
