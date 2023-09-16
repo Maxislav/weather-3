@@ -1,0 +1,1 @@
+export interface OpenweathermapItem {    clouds: {        all: number    },    dt: number,    main: {        temp: number,        humidity: number    }}export interface OpenweathermapDay{    dt: number,    data: OpenweathermapItem}

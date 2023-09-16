@@ -1,0 +1,1 @@
+import styles from './images.component.less'import { useEffect } from "react";export function ImagesComponent(){    useEffect(() => {        console.log('Component mounted');        return () => {            console.log('Component unmounted');        }    }, []);    return <div className={styles.container}>    </div>}

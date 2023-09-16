@@ -1,8 +1,8 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router/browser.routes";
-import styles from './App.less'
+import styles from './app.less'
+import { ForecastListComponent } from "./components/forecast-list/forecast-list.component";
 
-console.log(styles['App-header'])
 
 export function Fallback() {
     return <p>Performing initial data load</p>;
@@ -10,8 +10,8 @@ export function Fallback() {
 
 
 export function App() {
-    return <div className={ styles.App }>
-        app component
+    return <div className={ styles.app }>
+        <ForecastListComponent></ForecastListComponent>
         <RouterProvider router={ router } fallbackElement={ <Fallback/> }/>
     </div>;
 }
