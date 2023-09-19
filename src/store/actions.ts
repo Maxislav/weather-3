@@ -1,0 +1,1 @@
+import { OpenweathermapItem } from "../interfaces/openweathermap";export const loadingStart = () => ({    type: 'LOADING_START',})export const loadingSuccess = (list: OpenweathermapItem[]) => ({    type: 'LOADING_SUCCESS',    list})
