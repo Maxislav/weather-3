@@ -6,7 +6,8 @@
     "dev-start": "webpack serve --open --hot --config webpack.config.js",
     "build": "webpack --config webpack-prod.config.js",
     "test": "jest",
-    "tsc-webpack-config:w": "tsc -w --project tsconfig-webpack.json"
+    "tsc-webpack-config:w": "tsc -w --project tsconfig-webpack.json",
+    "tsc-webpack-config": "tsc --project tsconfig-webpack.json"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
