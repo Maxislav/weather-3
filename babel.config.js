@@ -1,0 +1,1 @@
+module.exports = {    presets: [        "@babel/preset-react",        ["@babel/preset-env", { targets: { node: "current" } }],        "@babel/preset-typescript",    ],    /*"test": {        "plugins": ["transform-es2015-modules-commonjs"]    }*/    //  "plugins": ["@babel/plugin-transform-modules-commonjs"]};

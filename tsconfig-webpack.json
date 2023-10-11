@@ -13,7 +13,10 @@
     ]
 
   },
-  "files": ["webpack.config.ts"],
+  "files": [
+    "webpack.config.ts",
+    "webpack-prod.config.ts"
+  ],
   "filesGlob": [
     "./src/types.d.ts",
     "!./node_modules/**/*.ts"
