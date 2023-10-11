@@ -1,0 +1,1 @@
+import { AppState } from "../interfaces/app-state";import { OpenweathermapItem } from "../interfaces/openweathermap";export const selectForecastItem = (state: AppState) => (id: string): OpenweathermapItem => {    return state.apiOpenWeatherReducer.list[Number(id)]}

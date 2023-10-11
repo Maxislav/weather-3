@@ -1,0 +1,1 @@
+import { ApiOpenWeatherState } from "../store/api-open-weather.reducer";export interface AppState{    apiOpenWeatherReducer: ApiOpenWeatherState}
