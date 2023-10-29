@@ -1,0 +1,1 @@
+import { Component } from "react";export class MySimpleComponent extends Component<any, any>{    render() {        return <>                 MySimple component            </>;    }}
