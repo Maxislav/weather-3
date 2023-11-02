@@ -6,9 +6,6 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "rootDir": "./server",
-    "outDir": "server/",
-    "typeRoots" : ["./typings", "./node_modules/jimp/types"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "types": [
@@ -16,8 +13,9 @@
     ]
 
   },
+
   "filesGlob": [
-    "./src/types.d.ts",
+
     "!./node_modules/**/*.ts"
   ],
 
