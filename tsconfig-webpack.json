@@ -15,7 +15,8 @@
   },
   "files": [
     "webpack.config.ts",
-    "webpack-prod.config.ts"
+    "webpack-prod.config.ts",
+    "webpack-super-prod.config.ts"
   ],
   "filesGlob": [
     "./src/types.d.ts",

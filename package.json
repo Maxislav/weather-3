@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev-start": "webpack serve --open --hot --config webpack.config.js",
-    "build": "webpack --config webpack-prod.config.js",
+    "build-prod": "webpack --config webpack-prod.config.js",
+    "build-super-prod": "webpack --config webpack-super-prod.config.js",
     "test": "jest",
     "tsc-webpack-config:w": "tsc -w --project tsconfig-webpack.json",
     "tsc-webpack-config": "tsc --project tsconfig-webpack.json"
