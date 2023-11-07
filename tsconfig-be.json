@@ -8,6 +8,8 @@
     "removeComments": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "jsx": "react-jsx",
+
     "types": [
       "node"
     ]

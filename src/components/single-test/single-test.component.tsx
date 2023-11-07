@@ -1,0 +1,1 @@
+export function SingleTestComponent(){    return <div>        Hello  App    </div>}

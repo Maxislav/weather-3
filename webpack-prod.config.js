@@ -7,7 +7,7 @@ const webpack_merge_1 = __importDefault(require("webpack-merge"));
 const common = require('./webpack.config');
 module.exports = (0, webpack_merge_1.default)(common, {
     mode: 'production',
-    devtool: false,
+    devtool: 'inline-source-map',
     output: {
         filename: '[name].js',
         path: __dirname + '/build',

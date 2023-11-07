@@ -8,7 +8,7 @@
     "build-super-prod": "webpack --config webpack-super-prod.config.js",
     "test": "jest",
     "tsc-be:w": "tsc -w --project tsconfig-be.json",
-    "node-dev": "node-dev server/index.js",
+    "node-dev": "node-dev server/index.js --notify=false",
     "tsc-webpack-config:w": "tsc -w --project tsconfig-webpack.json",
     "tsc-webpack-config": "tsc --project tsconfig-webpack.json"
   },
