@@ -48,6 +48,8 @@ module.exports = {
     plugins: [
         new html_webpack_plugin_1.default({
             template: path_1.default.resolve(__dirname, './src/index.html'),
+            minify: false,
+            base: '/'
         }),
         new webpack.ProvidePlugin({
             "React": "react",
@@ -163,7 +165,7 @@ module.exports = {
         ]
     },
     watchOptions: {
-        aggregateTimeout: 2000,
+        aggregateTimeout: 200,
         //poll: 1000,
     },
     cache: true,
