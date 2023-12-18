@@ -1,4 +1,4 @@
-import React, {memo, useState} from "react";
+import React, {memo, useCallback, useEffect, useMemo, useRef, useState} from "react";
 
 type MyDataInterface ={
     count: number,
@@ -17,18 +17,29 @@ const InnerComponent = ({count, increase}: MyDataInterface): React.JSX.Element =
     </>
 }
 
-function logProps(OriginalComponent: any, callback: () => boolean) {
+function logProps(OriginalComponent: any, shouldUpdate: (a: any, b: any) => boolean) {
+
+    let prevNumber: number = null;
+    let prevResult: React.JSX.Element | undefined;
     function Aa(props: MyDataInterface){
-        callback()
-        return  <>
-            <div>LogProps component</div>
+        if(prevResult!==undefined && !shouldUpdate(prevNumber, props.count)){
+            return prevResult
+        }
+
+        prevNumber = props.count
+        prevResult =  <>
+            <div>LogProps component </div>
             <OriginalComponent {...props}></OriginalComponent>
         </>
+
+
+        return prevResult
     }
     Aa.displayName = "LogProps(InnerComponent)"
     return Aa
 }
-const LogProps = logProps(InnerComponent, () => {
+const LogProps = logProps(InnerComponent, (pi, p2) => {
+    console.log(pi, p2)
     return false
 })
 
