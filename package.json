@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev-start": "webpack serve --open --hot --config webpack.config.js",
+    "dev-start": "node -v && webpack serve --open --hot --config webpack.config.js",
     "build-prod": "webpack --config webpack-prod.config.js",
     "build-super-prod": "webpack --config webpack-super-prod.config.js",
     "test": "jest",

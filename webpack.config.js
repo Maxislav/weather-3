@@ -98,7 +98,10 @@ module.exports = {
             },
             {
                 test: /\.tsx?$/,
-                loader: "ts-loader"
+                loader: "ts-loader",
+                options: {
+                    configFile: "tsconfig.json"
+                }
             },
             {
                 test: /\.less$/i,
